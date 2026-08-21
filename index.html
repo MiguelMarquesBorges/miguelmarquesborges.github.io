@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="stylesheet" href="style.css" />
+  <script src="menu.js" defer></script>
+  <script src="typing.js" defer></script>
 </head>
 <body>
   <aside class="side-rail" aria-label="Navegação principal">
@@ -19,11 +21,12 @@
     <div class="rail-footer"><p><i class="status-dot"></i>Em formação contínua</p><span>IFPR · Técnico em Informática</span></div>
   </aside>
   <main>
-    <header class="mobile-header"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><b></b><em></em></span><strong>miguel</strong></a><a class="header-link" href="tecnologias.html">Tecnologias <span>↗</span></a></header>
+    <header class="mobile-header"><button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button><a class="mobile-wordmark" href="index.html">miguel</a><span class="mobile-section">Início / 01</span></header>
+    <div class="mobile-drawer" id="mobile-menu" aria-hidden="true"><div class="mobile-drawer-meta"><span>Índice de navegação</span><span>M.M.B / 01</span></div><nav class="mobile-nav"><a class="active" href="index.html"><span>01</span>Início</a><a href="sobre.html"><span>02</span>Sobre</a><a href="tecnologias.html"><span>03</span>Tecnologias</a></nav><div class="mobile-drawer-footer"><i class="status-dot"></i>Em formação contínua</div></div>
     <section class="home-hero page-width">
       <div class="hero-copy">
         <p class="eyebrow">Estudante de tecnologia</p>
-        <h1 class="hello-code"><span>&lt;me&gt;</span>Olá, sou<br />Miguel Marques <em>Borges</em>.<span>&lt;/me&gt;</span></h1>
+        <h1 class="hello-code" aria-label="Olá, sou Miguel Marques Borges."><span class="code-tag">&lt;me&gt;</span><span class="hello-intro">Olá, sou</span><span class="typing-name"><span id="typed-name" aria-hidden="true"></span><span class="typing-cursor" aria-hidden="true"></span></span><span class="code-tag">&lt;/me&gt;</span></h1>
         <p class="hero-description">Estudante de Técnico em Informática no Instituto Federal do Paraná e entusiasta de programação, sempre ampliando repertório entre desenvolvimento, dados e infraestrutura.</p>
         <div class="hero-actions"><a class="primary-button" href="tecnologias.html">Ver tecnologias <span>→</span></a><a class="ghost-button" href="sobre.html">Conhecer trajetória <span>↗</span></a></div>
       </div>
@@ -31,7 +34,7 @@
     </section>
     <section class="signal-strip page-width" aria-label="Resumo do perfil"><article><span>Formação atual</span><strong>Técnico em Informática</strong><small>Instituto Federal do Paraná</small></article><article><span>Foco principal</span><strong>Programação</strong><small>Web, dados e aplicações</small></article><article><span>Idiomas</span><strong>Inglês e espanhol</strong><small>Nível intermediário · russo em estudo</small></article></section>
     <section class="routes page-width"><div class="section-heading"><div><p class="eyebrow">Próximas rotas</p><h2>Explore o portfólio por contexto.</h2></div><span class="reference">ROUTES-02</span></div><div class="route-grid"><a class="route-card" href="sobre.html"><span>02 / Sobre</span><strong>Conheça minha trajetória, interesses e base técnica.</strong><i>→</i></a><a class="route-card route-card-green" href="tecnologias.html"><span>03 / Tecnologias</span><strong>Veja os recursos que fazem parte do meu repertório.</strong><i>→</i></a></div></section>
-    <footer class="page-width"><span>© 2026 Miguel Marques Borges</span><span><a href="http://lattes.cnpq.br/1341365413381919" target="_blank" rel="noreferrer">Lattes ↗</a> · <a href="https://github.com/MiguelMarquesBorges" target="_blank" rel="noreferrer">GitHub ↗</a></span></footer>
+    <footer class="page-width"><span>© 2026 Miguel Marques Borges</span><span>Portfólio pessoal · IFPR</span></footer>
   </main>
 </body>
 </html>
